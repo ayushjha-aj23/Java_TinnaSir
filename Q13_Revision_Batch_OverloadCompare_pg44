@@ -5,25 +5,25 @@ class Overload
     void compare(int a, int b)
     {
         if(a>b)
-            System.out.println(a);
+            System.out.println("Greater Number is " + a);
         else
-            System.out.println(b);
+            System.out.println("Greater Number is " + b);
     }
     
     void compare(char ch_a, char ch_b)
     {
         if((int) ch_a > (int) ch_b)
-            System.out.println(ch_a);
+            System.out.println("Character with the higher numeric value is " + ch_a);
         else
-            System.out.println(ch_b);
+            System.out.println("Character with the higher numeric value is " + ch_b);
     }
     
     void compare(String Str_a, String Str_b)
     {
         if(Str_a.length()>Str_b.length())
-            System.out.println(Str_a);
+            System.out.println("Longer String is " + Str_a);
         else
-            System.out.println(Str_b);
+            System.out.println("Longer String is " + Str_b);
     }
     
     public static void main(String[] args) 
