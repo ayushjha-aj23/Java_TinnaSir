@@ -7,23 +7,23 @@ class Overload
         double sum=0.0;
         for(int i=1;i<=n;i++)
         {
-            sum = sum + (1.0/i);
+            sum = sum + (1.0 / i);
         }
-        System.out.println("sum1 is " + sum);
+        //System.out.println("sum1 is " + sum);
         return sum;
     }
     
     double series(double a, double n)
     {
         double sum=0.0;
+        double j=1.0,k=2.0;
         for(int i=1;i<=n;i++)
         {
-            double j=1.0,k=2.0;
             sum = sum + (j/(Math.pow(a,k)));
             j = j+3;
             k = k+3;
         }
-        System.out.println("sum2 is " + sum);
+        //System.out.println("sum2 is " + sum);
         return sum;
     }
     
