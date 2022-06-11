@@ -1,5 +1,6 @@
 
 import java.lang.*;
+import java.util.Scanner;
 
 class OverloadArea
 {
@@ -33,16 +34,42 @@ class OverloadArea
         double result1;
         double result2;
         double result3;
+        int choice;
 
-        // Area of Circle
-        result1 = OL.area(5.0);
-        // Area of Square
-        result2 = OL.area(5);
-        // Area of Rectangle
-        result3 = OL.area(5,10);
+        System.out.println("Press 1 for Area of Circle");
+        System.out.println("Press 2 for Area of Square");
+        System.out.println("Press 3 for Area of Rectangle");
+        System.out.println("Enter your Choice");
 
-        System.out.println(result1);
-        System.out.println(result2);
-        System.out.println(result3);
+        Scanner sc = new Scanner(System.in);
+        choice = sc.nextInt();
+
+        switch (choice)
+        {
+            case 1:
+                double r = sc.nextDouble();
+                // Area of Circle
+                result1 = OL.area(r);
+                System.out.println(result1);
+                break;
+
+            case 2:
+                int s = sc.nextInt();
+                // Area of Circle
+                result2 = OL.area(s);
+                System.out.println(result2);
+                break;
+
+            case 3:
+                double l = sc.nextDouble();
+                double b = sc.nextDouble();
+                // Area of Circle
+                result3 = OL.area(l, b);
+                System.out.println(result3);
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+        }
     }
 }
